@@ -5,16 +5,19 @@ int main() {
 int n;
 cout<<"enter your number: ";
 cin>>n;
+// char ch='A';
 char ch='A';
 for(int i=0; i<n; i++){
-    for(int j=0;j<n;j++){
-        cout<< ch<<"  ";
+    for(int j=i+1;j>0;j--){
+        cout<< ch ;
+
         ch++;
 
     }
+    
     cout<<endl;
 }
-cout<<"end of the program  "<<ch<<endl;
+
 
 return 0;
 
