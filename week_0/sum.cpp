@@ -2,18 +2,19 @@
 using namespace std;
 int main() {
 
-int number;
-cout<<"enter your numbers ";
-cin>>number;
-int sum=0;
-for(int i=1;i<=number;i++){
-    if(i%2!=0){
-        cout<<i<<"+";
-        sum=sum+i;
+int n;
+cout<<"enter your number: ";
+cin>>n;
+int num=1;
+for(int i=0; i<n; i++){
+    for(int j=0;j<n;j++){
+        cout<< num<<"  ";
+        num++;       
+
     }
+    cout<<endl;
 }
 
-cout<<"the sum is "<<sum <<endl;
-    return 0;
+return 0;
 
 }
